@@ -1,12 +1,16 @@
 <template>
+  <Header title="Learning Resources App"></Header>
   <StoredResources :resources="storedResources"></StoredResources>
 </template>
 
 <script>
 import StoredResources from './components/learning-resources/StoredResources.vue';
+import Header from './components/layouts/Header.vue';
+
 export default {
   components: {
     StoredResources,
+    Header,
   },
   data() {
     return {
