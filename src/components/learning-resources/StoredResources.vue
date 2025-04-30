@@ -11,22 +11,22 @@
 </template>
 
 <script>
-import ResourceItem from './ResourceItem.vue';
+  import ResourceItem from './ResourceItem.vue';
 
-export default {
-  props: ['resources'],
-  components: {
-    ResourceItem,
-  },
-};
+  export default {
+    inject: ['resources'],
+    components: {
+      ResourceItem,
+    },
+  };
 </script>
 
 <style scoped>
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin: auto;
-  max-width: 40rem;
-}
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    max-width: 40rem;
+  }
 </style>
